@@ -1,0 +1,19 @@
+<!-- <div class="container">
+    <div class="row">
+        My new App
+        <div class="col-md-5">
+            
+            <button class="btn btn-primary">submit</button>
+        </div>
+    </div>
+</div> -->
+
+<!-- parent to child -->
+<p>
+    Today's item: {{item}}
+</p>
+
+<!-- child to parent -->
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="add(newItem.value)">Add to parent's list</button>
